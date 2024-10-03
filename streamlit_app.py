@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 from forms.contact import contact_form
 
-@st.dialog("Sponsor the Future of Fisheries / Partner with Us") # pop-up dialog
+@st.experimental_dialog("Sponsor the Future of Fisheries / Partner with Us") # pop-up dialog
 def show_contact_form():
     contact_form()
 
